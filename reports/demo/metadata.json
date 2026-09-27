@@ -1,0 +1,17 @@
+{
+  "source": "synthetic kinematic surrogate",
+  "config": {
+    "size": 128,
+    "particles": 1500,
+    "noise": 0.025,
+    "particle_sigma": 0.9,
+    "amplitude": 2.0,
+    "age": 0.4,
+    "regime": "mixed",
+    "seed": 42,
+    "direction": 1
+  },
+  "velocity_unit": "pixels/pair",
+  "valid_vectors": 21,
+  "eligible_vectors": 21
+}

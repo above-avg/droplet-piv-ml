@@ -1,0 +1,104 @@
+{
+  "seed": 42,
+  "regimes": [
+    "radial",
+    "circulation",
+    "mixed"
+  ],
+  "pairs": 108,
+  "train_runs": 27,
+  "test_runs": 9,
+  "group_overlap": 0,
+  "random_forest": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        9
+      ]
+    ]
+  },
+  "dummy": {
+    "accuracy": 0.3333333333333333,
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_f1": 0.16666666666666666,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0
+      ]
+    ]
+  },
+  "accuracy_95pct_run_bootstrap": [
+    1.0,
+    1.0
+  ],
+  "noise_shift": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        12
+      ]
+    ]
+  },
+  "piv_mean_endpoint_error_px": 0.08625536811032115,
+  "piv_test_endpoint_error_px": 0.08664066196922607,
+  "piv_valid_fraction": 1.0,
+  "noise_shift_piv_endpoint_error_px": 0.1955865786366931,
+  "noise_shift_valid_fraction": 1.0,
+  "feature_importance_impurity": {
+    "speed_mean": 0.005085730099469906,
+    "speed_std": 0.010867053442709057,
+    "speed_p90": 0.0018701180987613763,
+    "radial_mean": 0.19149149606471616,
+    "radial_std": 0.18437743439815116,
+    "tangential_abs_mean": 0.15156760911846362,
+    "tangential_std": 0.16474899354723274,
+    "radial_speed_ratio": 0.2899915652304961,
+    "valid_fraction": 0.0
+  },
+  "limitations": [
+    "Synthetic kinematic classes; not measured evaporation mechanisms.",
+    "Few held-out runs; interval excludes simulator/model uncertainty.",
+    "PIV errors reported only on accepted vectors; inspect coverage.",
+    "Window-averaged PIV compared to velocity at window center."
+  ]
+}

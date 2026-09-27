@@ -1,0 +1,15 @@
+name: Scientific checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e ".[dev,dashboard]"
+      - run: python -m pytest -q
+      - run: droplet-lab benchmark --runs 4 --frames 2 --output outputs/ci

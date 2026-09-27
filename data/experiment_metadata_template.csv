@@ -1,0 +1,1 @@
+run_id,acquisition_date,fluid_composition,droplet_volume_ul,substrate,substrate_temperature_c,ambient_temperature_c,relative_humidity_percent,microns_per_pixel,frame_interval_s,exposure_s,tracer_description,optics,illumination,contact_line_behavior,raw_data_path,label_basis,notes
